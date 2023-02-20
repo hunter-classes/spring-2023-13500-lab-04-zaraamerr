@@ -31,4 +31,8 @@ int main(){
     result7 = trapezoid(12,15);
     std::cout << "trapezoid(12,15):\n";
     std::cout << result7;
+    std::string result8;
+    result8 = checkerboard3x3(16,11);
+    std::cout << "checkerboard3x3(16,11):\n";
+    std::cout << result8;
 }
