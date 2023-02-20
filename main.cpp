@@ -19,4 +19,16 @@ int main(){
     result4 = lower(6);
     std::cout << "lower(6):\n";
     std::cout << result4;
+    std::string result5;
+    result5 = upper(6);
+    std::cout << "upper(6):\n";
+    std::cout << result5;
+    std::string result6;
+    result6 = trapezoid(12,5);
+    std::cout << "trapezoid(12,5):\n";
+    std::cout << result6;
+    std::string result7;
+    result7 = trapezoid(12,15);
+    std::cout << "trapezoid(12,15):\n";
+    std::cout << result7;
 }
