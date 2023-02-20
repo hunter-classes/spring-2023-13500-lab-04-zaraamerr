@@ -9,17 +9,19 @@
 #include "main.h"
 
 std::string checkerboard(int width, int height){
-    std::string result;
-    for (int i = 0; i < height; i++) {
-        for (int j = 0; j < width; j++) {
-            if ((i + j) % 2 == 0) {
-                result+="*";
+    std::string result; //Create empty string var "result" that will store checkerboard string.
+    for (int i = 0; i < height; i++) { //Start loop that will execute height "i" times
+                                      //Each iteration of loop represents a row in checkerboard.
+        for (int j = 0; j < width; j++) { //Start loop that will execute width "i" times
+                                          //Each iteration of this loop represents a column in the checkerboard.
+            if ((i + j) % 2 == 0) { //Check if sum of current row index 'i' and current column index 'j' is even.
+                result+="*"; //If it is, then asterisk is added 
             } else {
-                result+=" ";
+                result+=" "; //If it is not, then a space is added 
             }
         }
-        result+="\n";
+        result+="\n"; //adds newline character after each row of checkerboard is completed
     }
 
-    return result;
+    return result; //Returns final result string, which represents checkerboard pattern
 }

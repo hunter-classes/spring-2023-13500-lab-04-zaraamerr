@@ -8,14 +8,16 @@
 #include "main.h"
 
 std::string lower(int length) {
-    std::string result;
-    // Print the lower-left half
-    for (int i = 0; i < length; i++) {
-        for (int j = 0; j <= i; j++) {
-            result += "*";
+    std::string result; //Create empty string var "result" that will store lower left half of triangle string.
+    for (int i = 0; i < length; i++) {//Start loop that will execute length "i" times
+                                      //Each iteration of loop represents a row in the lower left half triangle.
+        for (int j = 0; j <= i; j++) { //Starts loop that will execute i+1 number of times, where i is current value of outer loop's index var.
+                                      //Each iteration of this loop represents a column in the lower-left half of the triangle.
+
+            result += "*"; //Adds asterisk to the result string for each iteration of the inner loop.
         }
-        result += "\n";
+        result += "\n"; //adds a newline character after row is completed
     }
 
-    return result;
+    return result; //Returns final result string, which represents the lower-left half of the triangle pattern
 }

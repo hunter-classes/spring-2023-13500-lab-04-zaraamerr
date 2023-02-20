@@ -8,18 +8,19 @@
 #include "main.h"
 
 std::string upper(int length) {
-    std::string result;
-    // Print the upper-right half
-    for (int i = 0; i < length; i++) {
-        for (int j = 0; j < length; j++) {
-            if (j < i) {
-                result += " ";
+    std::string result; //Create empty string var "result" that will store upper right half of triangle string.
+    for (int i = 0; i < length; i++) { //Start loop that will execute length "i" times
+                                      //Each iteration of loop represents a row in the upper right half of the triangle.
+        for (int j = 0; j < length; j++) { //This starts a loop that will execute length number of times
+                                          //Each iteration of this loop represents a column in the upper-right half of the triangle.
+            if (j < i) { //Checks if current value of j is less than current value of i
+                result += " "; //If it is, then a space character is added to the result string.
             } else {
-                result += "*";
+                result += "*"; //Otherwise, an asterisk is added to the result string.
             }
         }
-        result += "\n";
+        result += "\n"; //adds a newline character to result string after each row of triangle is completed.
     }
 
-    return result;
+    return result; //Returns final result string, which represents upper-right half of the triangle pattern 
 }
