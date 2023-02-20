@@ -1,7 +1,8 @@
 //Name: Zara Amer
 //CSCI135
 //2/19/23
-//Task B of Lab 04:
+//Task B of Lab 04: Write a program checkerboard.cpp that takes an input of width and height 
+//and prints a rectangular checkerboard of the requested size using asterisks and spaces (alternating).
 
 #include <iostream>
 #include <string>
@@ -21,5 +22,4 @@ std::string checkerboard(int width, int height){
     }
 
     return result;
-
 }
