@@ -15,4 +15,8 @@ int main(){
     result3 = cross(8);
     std::cout << "cross(8):\n";
     std::cout << result3;
+    std::string result4;
+    result4 = lower(6);
+    std::cout << "lower(6):\n";
+    std::cout << result4;
 }
